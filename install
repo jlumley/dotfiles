@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Symlink all dotfiles into home dir
+
+ln -s **/*. $HOME
