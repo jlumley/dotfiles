@@ -2,4 +2,9 @@
 
 # Symlink all dotfiles into home dir
 
-ln -s **/*. $HOME
+for dir in ./*
+do
+  [ -f "$dir" ] &&  continue 
+  /bin/bash $dir/install
+done
+
