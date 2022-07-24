@@ -41,7 +41,7 @@ set showcmd
 
 " Search down into subfolders
 " provides tab-completion for all file-related tasks
-set path+=**
+set path=**
 
 " Disaplay all matching files when we tabl complete
 set wildmenu
