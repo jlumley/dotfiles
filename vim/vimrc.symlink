@@ -10,8 +10,9 @@ syntax on
 " For plugins to load correctly
 filetype plugin indent on
 
-" Show line numbers
-set number
+" turn hybrid line numbers on
+:set number relativenumber
+:set nu rnu
 
 " Blink cursor on error instead of beeping (grr)
 set visualbell
@@ -36,22 +37,14 @@ set showmode
 set showcmd
 
 
-" Search down into subfolders
-" provides tab-completion for all file-related tasks
-" Turning off for now to test adding ** to commands when needed for speed
-" ** is slow when working on react apps with large file trees when all 
-" npm packages are installed
-" set path=*
-
-" Disaplay all matching files when we tabl complete
-set wildmenu
-
-
 " Disable arrow keys in normal mode
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+" crtl-p to open fzf
+noremap <C-p> :FZF<Cr>
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -70,6 +63,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'preservim/nerdtree'
+Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 call plug#end()
