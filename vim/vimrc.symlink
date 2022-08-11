@@ -1,5 +1,5 @@
 set background=dark
-colorscheme industry 
+colorscheme night-owl
 
 " Don't try to be vi compatible
 set nocompatible
