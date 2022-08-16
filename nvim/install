@@ -6,5 +6,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # make nvim config dir
 mkdir -p $HOME/.config/nvim
-ln -sf $PWD/init.vim $HOME/.config/nvim/init.vim
+ln -sf $PWD/nvim/init.vim $HOME/.config/nvim/init.vim
 

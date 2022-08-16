@@ -60,10 +60,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 " Install vim plugins
 call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } 
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'preservim/nerdtree'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
