@@ -1,0 +1,3 @@
+# Install bash configs
+#
+ln -sf $PWD/bash/bashrc.symlink $HOME/.bashrc

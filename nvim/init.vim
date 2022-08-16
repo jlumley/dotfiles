@@ -1,5 +1,4 @@
 set background=dark
-colorscheme night-owl
 
 " Don't try to be vi compatible
 set nocompatible
@@ -46,12 +45,6 @@ noremap <Right> <Nop>
 " crtl-p to open fzf
 noremap <C-p> :FZF<Cr>
 
-" Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
-
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
@@ -60,12 +53,14 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 " Install vim plugins
 call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } 
 Plug 'airblade/vim-gitgutter'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 call plug#end()
+
+colorscheme tokyonight
 

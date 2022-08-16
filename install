@@ -4,7 +4,8 @@
 
 for dir in ./*
 do
-  [ -f "$dir" ] &&  continue 
+  [ -f "$dir" ] &&  continue
+  [ ! -f "${dir}/install" ] && echo "Install ${dir} disabled" && continue
   /bin/bash $dir/install
 done
 
