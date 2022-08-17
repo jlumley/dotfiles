@@ -54,9 +54,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Install vim plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'airblade/vim-gitgutter'
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'neoclide/coc.nvim', {'branch': 'main'}
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
