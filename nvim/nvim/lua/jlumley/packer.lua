@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
 
   use 'airblade/vim-gitgutter'
+  use 'sbdchd/neoformat'
   use 'stefandtw/quickfix-reflector.vim'
   use 'tomtom/tcomment_vim'
   use 'tpope/vim-fugitive'
