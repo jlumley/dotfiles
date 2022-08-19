@@ -1,4 +1,4 @@
 # ignore vim plugins
 **/autoload
 **/plugged
-**/plugins
+**/plugin
