@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
   use 'stefandtw/quickfix-reflector.vim'
   use 'tomtom/tcomment_vim'
   use 'tpope/vim-fugitive'
+  use 'vim-airline/vim-airline'
   use { 'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
   use {'neoclide/coc.nvim', branch = 'release'}
 
