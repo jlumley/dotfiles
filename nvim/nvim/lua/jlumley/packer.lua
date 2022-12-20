@@ -7,7 +7,12 @@ return require('packer').startup(function(use)
   -- Tokyo night colour scheme
   use 'folke/tokyonight.nvim'
 
-  use 'nvim-neorg/neorg'
+    use {
+    'vimwiki/vimwiki',
+    config = function()
+    end
+  }
+
   use 'airblade/vim-gitgutter'
   use 'sbdchd/neoformat'
   use 'stefandtw/quickfix-reflector.vim'
