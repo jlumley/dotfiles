@@ -7,9 +7,14 @@ return require('packer').startup(function(use)
   -- Tokyo night colour scheme
   use 'folke/tokyonight.nvim'
 
-    use {
+  use {
     'vimwiki/vimwiki',
     config = function()
+    local l = {}
+    l.syntax = 'markdown'
+    l.ext = '.md'
+    l.auto_diary_index = 1
+    vim.g.vimwiki_list = {l}
     end
   }
 
