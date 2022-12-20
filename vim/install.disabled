@@ -1,8 +1,0 @@
-#!/bin/bash
-# Insall vim configs
-#
-
-
-ln -sf $PWD/vim/vimrc.symlink $HOME/.vimrc
-ln -sf $PWD/vim/vim.symlink $HOME/.vim
-
