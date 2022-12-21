@@ -14,7 +14,7 @@ map("n", "<leader>d", ":pu=strftime('%B %d, %Y')<CR>")
 -- remaps for coc
 map(
     "i",
-    "<C-l>",
+    "<CR>",
     [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]],
     expr_opts
 )
