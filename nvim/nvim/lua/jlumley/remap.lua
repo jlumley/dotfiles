@@ -10,11 +10,13 @@ end
 map("n", "<C-p>", "<cmd>FZF<CR>")
 
 map("n", "<leader>d", ":pu=strftime('%B %d, %Y')<CR>")
+
 -- remaps for coc
 map(
     "i",
-    "<CR>",
+    "<C-l>",
     [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]],
     expr_opts
 )
+
 

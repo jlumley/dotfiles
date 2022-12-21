@@ -1,0 +1,5 @@
+#!/bin/bash
+# Insall coc snippets
+
+ln -sf $PWD/coc/ultisnips $HOME/.config/coc/
+
