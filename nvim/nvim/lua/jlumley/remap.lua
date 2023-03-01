@@ -20,11 +20,11 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 map("n", "<leader>d", ":pu=strftime('%B %d, %Y')<CR>")
 
 -- remaps for coc
-map(
-    "i",
-    "<CR>",
-    [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]],
-    expr_opts
-)
+-- map(
+--     "i",
+--     "<CR>",
+--     [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]],
+--     expr_opts
+-- )
 
 
