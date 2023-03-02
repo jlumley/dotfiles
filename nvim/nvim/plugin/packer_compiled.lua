@@ -175,6 +175,11 @@ _G.packer_plugins = {
     path = "/Users/jlumley/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  undotree = {
+    loaded = true,
+    path = "/Users/jlumley/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
+  },
   ["vim-airline"] = {
     loaded = true,
     path = "/Users/jlumley/.local/share/nvim/site/pack/packer/start/vim-airline",
@@ -190,6 +195,11 @@ _G.packer_plugins = {
     path = "/Users/jlumley/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/jlumley/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
   vimwiki = {
     config = { "\27LJ\2\nw\0\0\3\0\b\0\r4\0\0\0'\1\1\0=\1\0\0'\1\3\0=\1\2\0)\1\1\0=\1\4\0006\1\5\0009\1\6\0014\2\3\0>\0\1\2=\2\a\1K\0\1\0\17vimwiki_list\6g\bvim\21auto_diary_index\b.md\bext\rmarkdown\vsyntax\0" },
     loaded = true,
@@ -199,14 +209,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
-time([[Config for todo-comments.nvim]], false)
 -- Config for: vimwiki
 time([[Config for vimwiki]], true)
 try_loadstring("\27LJ\2\nw\0\0\3\0\b\0\r4\0\0\0'\1\1\0=\1\0\0'\1\3\0=\1\2\0)\1\1\0=\1\4\0006\1\5\0009\1\6\0014\2\3\0>\0\1\2=\2\a\1K\0\1\0\17vimwiki_list\6g\bvim\21auto_diary_index\b.md\bext\rmarkdown\vsyntax\0", "config", "vimwiki")
 time([[Config for vimwiki]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

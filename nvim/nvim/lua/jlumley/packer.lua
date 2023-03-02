@@ -33,9 +33,6 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    -- diabling coc to trest nvim built-in lsp
-    -- use {'neoclide/coc.nvim', branch = 'release'}
-
     use {
         "folke/todo-comments.nvim",
         requires = "nvim-lua/plenary.nvim",
@@ -57,7 +54,6 @@ return require('packer').startup(function(use)
     }
 
     --install language server client
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -81,5 +77,8 @@ return require('packer').startup(function(use)
         }
     }
 
+    use { 'mbbill/undotree'}
+
+    use { 'christoomey/vim-tmux-navigator' }
 
 end)

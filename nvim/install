@@ -6,5 +6,6 @@ if [ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 fi
 
-ln -sf $PWD/nvim/nvim $HOME/.config/nvim
-
+if [ ! -e ~/.config/nvim ]; then 
+    ln -sf $PWD/nvim/nvim $HOME/.config/nvim
+fi
