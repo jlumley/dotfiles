@@ -14,7 +14,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- keep cursour centered while hoping
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "n", "nzz")
+vim.keymap.set("n", "N", "Nzz")
 
 -- delete and paste without saving to register
 vim.keymap.set("x", "<leader>p", [["_dP]])
